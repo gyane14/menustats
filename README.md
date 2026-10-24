@@ -24,6 +24,10 @@ brew services start menustats   # start now and at every login
 
 Needs macOS 13+ and Apple's Command Line Tools (`xcode-select --install`); Homebrew builds it from source.
 
+Use the full name `gyane14/tap/menustats` as above. If you `brew tap gyane14/tap` first and then run
+`brew install menustats`, Homebrew refuses to load it from an untrusted tap; run
+`brew trust gyane14/tap` once, then install again.
+
 Stop it with `brew services stop menustats`, or Quit from its menu.
 
 ## Build manually
