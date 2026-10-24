@@ -53,12 +53,14 @@ Stop it with `brew services stop menustats`, or Quit from its menu.
 ## Uninstall
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/gyane14/menustats/main/uninstall.sh | sh
+menustats-uninstall
 ```
 
-This stops MenuStats and removes it completely: the Homebrew install and its login agent, the
-`gyane14/tap` tap, a copy built with `build.sh`, cached downloads and its preferences. Read
-[uninstall.sh](uninstall.sh) first if you prefer; it touches nothing else.
+This command is installed with MenuStats (since 0.1.1). It stops MenuStats and removes it
+completely: the Homebrew install and its login agent, the `gyane14/tap` tap, a copy built with
+`build.sh`, cached downloads and its preferences. It touches nothing else; see
+[uninstall.sh](uninstall.sh). If you built MenuStats yourself, run `./uninstall.sh` from this
+repository instead.
 
 ## Build manually
 
